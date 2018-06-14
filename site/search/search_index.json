@@ -1,0 +1,114 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Introduction\n\n\nBlockchain industry\n\n\nThe blockchain industry and the infrastructure of the Internet of Value are being built  rapidly around the globe, and to many the atmosphere is eerily similar to the building of the Internet in the late \u201890s,   with pioneers and dreamers coming together to build a new future. Tomochain can be a leading part of this phenomenon through seamlessly merging an ecosystem of applications with cryptographic tokens used by millions of mainstream users with a unique blockchain infrastructure architecture allowing for a fast, secure, frictionless payment and trusted store of value. Distributed systems have been researched in a \u201dpermissioned setting\u201d where the number of participants in the system and their identities are common knowledge. In 2008, Satoshi Nakamoto - \u201dproposed his celebrated \u201cblockchain protocol\u201d which attempts to achieve consensus in a permissionless setting: anyone can join (or leave) the protocol execution (without getting permission from a centralized or distributed authority), and the protocol instructions do not depend on the identities of the players\u201d. Later on, Ethereum with its Ethereum Virtual Machine (EVM) proposed several significant enhancements compared to Bitcoin, including Smart Contracts. Both Bitcoin and Ethereum have some issues, especially with transaction processing performance. \n\n\nApproach\n\n\nIn order to construct an efficient and secured consensus protocol for Tomochain, we tackle the following main bottlenecks of classic blockchains:\nEfficiency: Existing blockchains as employed by major crypto-currencies(e.g., Bitcoin or Ethereum) do not scale well to handle a large transaction volume, e.g. Bitcoin and Ethereum can handle around 10 transactions/second. This small throughput severely hinders a wide-spread adoption of such crypto- currencies. Confirmation times: The 10 minutes Bitcoin block-time is significantly larger than network latency. Furthermore, a Bitcoin block requires 5 subsequent blocks following it so that it can be confirmed; thus it takes on average one hour for a transaction to be confirmed (with low confidence). While Ethereum uses a smaller block-time, the average confirmation time still remains relatively high, around 13 minutes. These long confirmation times hinder many important applications (especially smart contract applications). Fork Generation: The problem of fork chain consumes computational energy, time, and creates potential vulnerabilities for different types of attacks. With the motivation as mentioned above, our persistent and ultimate goal of research is to propose the consensus protocol focusing on the following key strategies:\nDouble Validation to strengthen security and reduce fork", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#blockchain-industry", 
+            "text": "The blockchain industry and the infrastructure of the Internet of Value are being built  rapidly around the globe, and to many the atmosphere is eerily similar to the building of the Internet in the late \u201890s,   with pioneers and dreamers coming together to build a new future. Tomochain can be a leading part of this phenomenon through seamlessly merging an ecosystem of applications with cryptographic tokens used by millions of mainstream users with a unique blockchain infrastructure architecture allowing for a fast, secure, frictionless payment and trusted store of value. Distributed systems have been researched in a \u201dpermissioned setting\u201d where the number of participants in the system and their identities are common knowledge. In 2008, Satoshi Nakamoto - \u201dproposed his celebrated \u201cblockchain protocol\u201d which attempts to achieve consensus in a permissionless setting: anyone can join (or leave) the protocol execution (without getting permission from a centralized or distributed authority), and the protocol instructions do not depend on the identities of the players\u201d. Later on, Ethereum with its Ethereum Virtual Machine (EVM) proposed several significant enhancements compared to Bitcoin, including Smart Contracts. Both Bitcoin and Ethereum have some issues, especially with transaction processing performance.", 
+            "title": "Blockchain industry"
+        }, 
+        {
+            "location": "/#approach", 
+            "text": "In order to construct an efficient and secured consensus protocol for Tomochain, we tackle the following main bottlenecks of classic blockchains:\nEfficiency: Existing blockchains as employed by major crypto-currencies(e.g., Bitcoin or Ethereum) do not scale well to handle a large transaction volume, e.g. Bitcoin and Ethereum can handle around 10 transactions/second. This small throughput severely hinders a wide-spread adoption of such crypto- currencies. Confirmation times: The 10 minutes Bitcoin block-time is significantly larger than network latency. Furthermore, a Bitcoin block requires 5 subsequent blocks following it so that it can be confirmed; thus it takes on average one hour for a transaction to be confirmed (with low confidence). While Ethereum uses a smaller block-time, the average confirmation time still remains relatively high, around 13 minutes. These long confirmation times hinder many important applications (especially smart contract applications). Fork Generation: The problem of fork chain consumes computational energy, time, and creates potential vulnerabilities for different types of attacks. With the motivation as mentioned above, our persistent and ultimate goal of research is to propose the consensus protocol focusing on the following key strategies:\nDouble Validation to strengthen security and reduce fork", 
+            "title": "Approach"
+        }, 
+        {
+            "location": "/faq/", 
+            "text": "FAQ", 
+            "title": "FAQ"
+        }, 
+        {
+            "location": "/faq/#faq", 
+            "text": "", 
+            "title": "FAQ"
+        }, 
+        {
+            "location": "/masternodes/", 
+            "text": "Masternodes\n\n\nArchitecture\n\n\nThe Tomochain blockchain is produced and maintained by a set of masternodes in a consistent manner through the Tomochain consensus protocol as shown in Fig.1. These masternodes are full nodes that hold $TOMO. For a coin-holder to become a masternode, two requirements must be satisfied:\nThe coin-holder must hold at least a minimum required amount of coin (see next section for more details).\nThe coin-holder must be one of the most voted masternode candidates in the system. The voting by coin-holders is credited through a Voting DApp that allows coin-holders to send $TOMO through the smart contract mechanism.\nIn addition to the voting system which is an improvement over the current Bitcoin and Ethereum blockchain, Tomochain also provides a new technique, namely Double Validation complemented with a Randomization mechanism. This new technique significantly decreases the probability of having invalid blocks in the blockchain. These enhancements and the components of Tomochain are step-by-step detailed in the followings.\n\n\nMasternode functions\n\n\nCoin-holder is as simple as its name: users who join the network, who own and transfer $TOMO. Masternodes are full-nodes which maintain a copy of the blockchain, produce blocks and keep the chain consistent. It is worth noting that, Tomochain does not have miners as in the current Proof-of-Work-based blockchain systems such as Bitcoin and Ethereum. Only masternodes can produce and validate blocks. Masternodes are selected via a voting system. The first requirement of being masternodes is to deposit 50 000 $TOMO to the Voting Smart Contract. Then, these depositors are listed as masternode candidates in the Voting DApp, which allows coin-holders to vote for them by sending $TOMO to the smart contract.\nTomochain blockchain network\n\n\nMasternodes which work hard in the system to create and verify blocks will be incentivized with $TOMO. Furthermore, coin holders who vote for these incentivized masternodes will also receive $TOMO in proportion to the amount of $TOMO they have invested via ballots. Tomochain engineers take responsibility to design that fair, explicit, automated and accountable reward mechanism.\nThe list of masternode candidates is dynamically sorted based on voted coins. The performance of the masternodes will be tracked and reported back to the coin holders in terms of three main metrics: CPU/Memory charts which ensure the workload of the masternodes, the number of signed blocks which indicates their work performance and the last signed block which figures out their last activity. Coin- holders, at any time, can unvote masternodes, who have  low performance, and give their votes to the other masternodes who have beter performance. Coin-holders have incentives to do that because their voted coins are seen as investment to their supported masternodes, thus they should choose a voting strategy in order to maximize their profit from the investment. This simple trick keeps the system healthy since masternodes always have to race for their position so that all weak masternodes will eventually be eliminated. Therefore, only the strongest masternodes are voted and can flourish.", 
+            "title": "Masternodes"
+        }, 
+        {
+            "location": "/masternodes/#masternodes", 
+            "text": "", 
+            "title": "Masternodes"
+        }, 
+        {
+            "location": "/masternodes/#architecture", 
+            "text": "The Tomochain blockchain is produced and maintained by a set of masternodes in a consistent manner through the Tomochain consensus protocol as shown in Fig.1. These masternodes are full nodes that hold $TOMO. For a coin-holder to become a masternode, two requirements must be satisfied:\nThe coin-holder must hold at least a minimum required amount of coin (see next section for more details).\nThe coin-holder must be one of the most voted masternode candidates in the system. The voting by coin-holders is credited through a Voting DApp that allows coin-holders to send $TOMO through the smart contract mechanism.\nIn addition to the voting system which is an improvement over the current Bitcoin and Ethereum blockchain, Tomochain also provides a new technique, namely Double Validation complemented with a Randomization mechanism. This new technique significantly decreases the probability of having invalid blocks in the blockchain. These enhancements and the components of Tomochain are step-by-step detailed in the followings.", 
+            "title": "Architecture"
+        }, 
+        {
+            "location": "/masternodes/#masternode-functions", 
+            "text": "Coin-holder is as simple as its name: users who join the network, who own and transfer $TOMO. Masternodes are full-nodes which maintain a copy of the blockchain, produce blocks and keep the chain consistent. It is worth noting that, Tomochain does not have miners as in the current Proof-of-Work-based blockchain systems such as Bitcoin and Ethereum. Only masternodes can produce and validate blocks. Masternodes are selected via a voting system. The first requirement of being masternodes is to deposit 50 000 $TOMO to the Voting Smart Contract. Then, these depositors are listed as masternode candidates in the Voting DApp, which allows coin-holders to vote for them by sending $TOMO to the smart contract.\nTomochain blockchain network  Masternodes which work hard in the system to create and verify blocks will be incentivized with $TOMO. Furthermore, coin holders who vote for these incentivized masternodes will also receive $TOMO in proportion to the amount of $TOMO they have invested via ballots. Tomochain engineers take responsibility to design that fair, explicit, automated and accountable reward mechanism.\nThe list of masternode candidates is dynamically sorted based on voted coins. The performance of the masternodes will be tracked and reported back to the coin holders in terms of three main metrics: CPU/Memory charts which ensure the workload of the masternodes, the number of signed blocks which indicates their work performance and the last signed block which figures out their last activity. Coin- holders, at any time, can unvote masternodes, who have  low performance, and give their votes to the other masternodes who have beter performance. Coin-holders have incentives to do that because their voted coins are seen as investment to their supported masternodes, thus they should choose a voting strategy in order to maximize their profit from the investment. This simple trick keeps the system healthy since masternodes always have to race for their position so that all weak masternodes will eventually be eliminated. Therefore, only the strongest masternodes are voted and can flourish.", 
+            "title": "Masternode functions"
+        }, 
+        {
+            "location": "/posv/", 
+            "text": "Proof-of-Stake Voting\n\n\nWe begin by describing the blockchain protocol in the \u201dstakeholder and voting\u201d setting, where leaders are assigned to blockchain slots with probability proportional to their (fixed) initial stake and votes received from coin-holders which will be the effective stake distribution throughout the execution. To simplify our presentation, we abstract this leader (chairman and vice-chairman) selection process, treating it simply as an \u201cideal functionality\u201d that faithfully carries out the process of randomly assigning masternodes to slots. In the following, we explain how to instantiate this functionality with a specific secure computation.\n\n\nTo start, as we are dealing with proof of stake consensus algorithm\n\n\nTime, Slots, Epoch\n....", 
+            "title": "Proof-of-Stake Voting"
+        }, 
+        {
+            "location": "/posv/#proof-of-stake-voting", 
+            "text": "We begin by describing the blockchain protocol in the \u201dstakeholder and voting\u201d setting, where leaders are assigned to blockchain slots with probability proportional to their (fixed) initial stake and votes received from coin-holders which will be the effective stake distribution throughout the execution. To simplify our presentation, we abstract this leader (chairman and vice-chairman) selection process, treating it simply as an \u201cideal functionality\u201d that faithfully carries out the process of randomly assigning masternodes to slots. In the following, we explain how to instantiate this functionality with a specific secure computation.  To start, as we are dealing with proof of stake consensus algorithm  Time, Slots, Epoch\n....", 
+            "title": "Proof-of-Stake Voting"
+        }, 
+        {
+            "location": "/started/", 
+            "text": "Getting started\n\n\nBeginners guide\n\n\nGetting TOMO\n\n\nBrowse to https://wallet.tomocoin.io\n\n\nClick on + CREATE NEW WALLET button.\n\n\nUsing the explorer\n\n\nhttps://explorer-testnet.tomochain.com/\n\n\nHow To Vote\n\n\nhttps://validators-testnet.tomochain.com/\n\n\nDapps\n\n\nDeploy dapp tutorial \nhttps://github.com/nuuneoi/tomochain-dapp-example\n\n\nUsing Testnet\n\n\nRunning a Node\n\n\ntodo\n\n\nRunning a Masternode\n\n\ntodo", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/started/#getting-started", 
+            "text": "", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/started/#beginners-guide", 
+            "text": "", 
+            "title": "Beginners guide"
+        }, 
+        {
+            "location": "/started/#getting-tomo", 
+            "text": "Browse to https://wallet.tomocoin.io  Click on + CREATE NEW WALLET button.", 
+            "title": "Getting TOMO"
+        }, 
+        {
+            "location": "/started/#using-the-explorer", 
+            "text": "https://explorer-testnet.tomochain.com/", 
+            "title": "Using the explorer"
+        }, 
+        {
+            "location": "/started/#how-to-vote", 
+            "text": "https://validators-testnet.tomochain.com/", 
+            "title": "How To Vote"
+        }, 
+        {
+            "location": "/started/#dapps", 
+            "text": "Deploy dapp tutorial \nhttps://github.com/nuuneoi/tomochain-dapp-example", 
+            "title": "Dapps"
+        }, 
+        {
+            "location": "/started/#using-testnet", 
+            "text": "", 
+            "title": "Using Testnet"
+        }, 
+        {
+            "location": "/started/#running-a-node", 
+            "text": "todo", 
+            "title": "Running a Node"
+        }, 
+        {
+            "location": "/started/#running-a-masternode", 
+            "text": "todo", 
+            "title": "Running a Masternode"
+        }
+    ]
+}
