@@ -56,6 +56,8 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
     
   </head>
   
@@ -822,22 +824,72 @@ mechanisms for those malicious masternodes.</p>
 <strong>(https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md)</strong>.
 Transactions in are included <script type="math/tex">CHAIN\_ID</script> specified for different public
 chains. Table <script type="math/tex; mode=display">table:chainid</script> shows recognized <script type="math/tex">CHAIN\_ID</script>s.</p>
-<p>CHAIN_ID   Chain(s)</p>
-<hr />
-<p>1           Ethereum mainnet
-  2           Morden (disused), Expanse mainnet
-  3           Ropsten
-  4           Rinkeby
-  30          Rootstock mainnet
-  31          Rockstock testnet
-  42          Kovan
-  61          Ethereum Classic mainnet
-  62          Ethereum Classic testnet
-  1337        Geth private chains (default)
-  77          Sokol, the public POA Network testnet
-  99          Core, the public POA Network main network
-  88          Mainnet
-  89          Testnet</p>
+<table>
+<thead>
+<tr>
+<th>CHAIN_ID</th>
+<th>Chain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Ethereum mainnet</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Morden (disused), Expanse mainnet</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ropsten</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Rinkeby</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Rootstock mainnet</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Rockstock testnet</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Kovan</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Ethereum Classic mainnet</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Ethereum Classic testnet</td>
+</tr>
+<tr>
+<td>1337</td>
+<td>Geth private chains (default)</td>
+</tr>
+<tr>
+<td>77</td>
+<td>Sokol, the public POA Network testnet</td>
+</tr>
+<tr>
+<td>99</td>
+<td>Core, the public POA Network main network</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Mainnet</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Testnet</td>
+</tr>
+</tbody>
+</table>
 <p>: Chains and chain_id<span data-label="table:chainid"></span></p>
 <h2 id="safety-and-liveness-safety-and-liveness-unnumbered">Safety and liveness {#safety-and-liveness .unnumbered}</h2>
 <p>Safety implies having a single agreed upon chain where there are not two
@@ -972,10 +1024,9 @@ distribution function is uniform eventually.</p>
     proposal, separate from this technical paper in a later date.</p>
 </li>
 </ul>
-<p><span>00</span> Satoshi Nakamoto. Bitcoin: A peer-to-peer electronics
-cash system. 2008.</p>
-<p>Ethereum Foundation. Ethereum’s White Paper. , 2014. Online available
-25/05/2018.</p>
+<h2 id="references"><i class="fa fa-book"></i> References</h2>
+<p>Satoshi Nakamoto. Bitcoin: A peer-to-peer electronics cash system. 2008.</p>
+<p>Ethereum Foundation. Ethereum’s White Paper. , 2014. Online available 25/05/2018.</p>
 <p>D. Larimer. Delegated Proof-of-Stake (DPOS). BitShare White Paper 2014.</p>
 <p>S. King and S. Nadal. PPCoin: Peer-to-peer crypto-currency with
 proof-of-stake. Self-Published, 2012.</p>
