@@ -332,26 +332,26 @@ confirmation times, plus the contributions and benefits of masternodes
 are fair in the sense that the probability distribution function is
 uniform eventually.</p>
 <p><span><em>Structure of the remainder of the paper</em></span>.
-Section [Sec:TomochainOverview] explains the intuition ideas and
+Section <script type="math/tex; mode=display">Sec:TomochainOverview</script> explains the intuition ideas and
 overview architectural design of masternodes, framework and background
 protocols that help mass readers (e.g., investors, traders, others) who
 may not have technical knowledge understand our mechanism easily.
-Section [Sec:StakeVoting] presents stakeholder policy, masternode
+Section <script type="math/tex; mode=display">Sec:StakeVoting</script> presents stakeholder policy, masternode
 committee voting systems, and reward mechanism.
-Section [Sec:ProtocolOverview] explains the motivation and double
+Section <script type="math/tex; mode=display">Sec:ProtocolOverview</script> explains the motivation and double
 validation process as well as finality checkpoint of the protocol. In
-Section [Sec:ProtocolFormalization], we present the formalization of
+Section <script type="math/tex; mode=display">Sec:ProtocolFormalization</script>, we present the formalization of
 our model in a mathematical way to show the soundness of our model and
-protocol. Section [Sec:SecurityAnalysis] discusses the security
+protocol. Section <script type="math/tex; mode=display">Sec:SecurityAnalysis</script> discusses the security
 analysis and resistant strain of potential attacks. We discuss and
 compare with several existing blockchains in
-Section [Sec:relatedwork]. Finally, we conclude the paper in Section
-[Sec:Conclusion].</p>
+Section <script type="math/tex; mode=display">Sec:relatedwork</script>. Finally, we conclude the paper in Section
+<script type="math/tex; mode=display">Sec:Conclusion</script>.</p>
 <h1 id="tomochain-masternode-design">Tomochain Masternode Design</h1>
 <h2 id="the-tomochain-architecture-sectomochainoverview">The Tomochain architecture {#Sec:TomochainOverview}</h2>
 <p>The blockchain is produced and maintained by a set of <em>masternodes</em> in a
 consistent manner through the protocol as shown in Fig.
-[fig:architecture]. These masternodes are full nodes that hold \$TOMO.
+<script type="math/tex; mode=display">fig:architecture</script>. These masternodes are full nodes that hold $TOMO.
 For a coin-holder to become a masternode, two requirements must be
 satisfied:</p>
 <ul>
@@ -362,7 +362,7 @@ satisfied:</p>
 <li>
 <p>The coin-holder must be one of the most voted masternode candidates
     in the system. The voting by coin-holders is credited through a
-    <em>Voting DApp</em> that allows coin-holders to <em>send \$TOMO through the
+    <em>Voting DApp</em> that allows coin-holders to <em>send $TOMO through the
     smart contract mechanism</em>.</p>
 </li>
 </ul>
@@ -376,20 +376,20 @@ components of are step-by-step detailed in the followings.</p>
 <h2 id="stakeholders-voting-secstakevoting">Stakeholders &amp; Voting {#Sec:StakeVoting}</h2>
 <h2 id="coin-holders-masternodes-coin-holders-masternodes-unnumbered">Coin Holders, Masternodes {#coin-holders-masternodes .unnumbered}</h2>
 <p>Coin-holder is as simple as its name: users who join the network, who
-own and transfer \$TOMO. Masternodes are full-nodes which maintain a
+own and transfer $TOMO. Masternodes are full-nodes which maintain a
 copy of the blockchain, produce blocks and keep the chain consistent. It
 is worth noting that, does not have miners as in the current
 Proof-of-Work-based blockchain systems such as Bitcoin and Ethereum.
 Only masternodes can produce and validate blocks.</p>
 <p>Masternodes are selected via a voting system. The first requirement of
-being masternodes is to deposit 50 000 \$TOMO to the Voting Smart
+being masternodes is to deposit 50 000 $TOMO to the Voting Smart
 Contract. Then, these depositors are listed as masternode candidates in
 the Voting DApp, which allows coin-holders to vote for them by sending
-\$TOMO to the smart contract.</p>
+$TOMO to the smart contract.</p>
 <p>Masternodes which work hard in the system to create and verify blocks
-will be incentivized with \$TOMO. Furthermore, coin holders who vote for
-these incentivized masternodes will also receive \$TOMO in proportion to
-the amount of \$TOMO they have invested via ballots. engineers take
+will be incentivized with $TOMO. Furthermore, coin holders who vote for
+these incentivized masternodes will also receive $TOMO in proportion to
+the amount of $TOMO they have invested via ballots. engineers take
 responsibility to design that fair, explicit, automated and accountable
 reward mechanism.</p>
 <p>The list of masternode candidates is dynamically sorted based on voted
@@ -410,16 +410,16 @@ can flourish.</p>
 <h2 id="voting-masternode-committee-voting-masternode-committee-unnumbered">Voting &amp; Masternode Committee {#voting-masternode-committee .unnumbered}</h2>
 <p>There are maximum ninety-nine masternodes elected in the masternode
 committee. The required amount of deposit for masternode role is set at
-50 000 \$TOMO. This amount is locked in a <em>voting smart contract</em>. Once
+50 000 $TOMO. This amount is locked in a <em>voting smart contract</em>. Once
 a masternode is demoted (by not remaining in the top ninety-nine voted
 masternodes) or intentionally quits the masternode candidates
 list/masternode committee, the deposit will have been locked for a
 month.</p>
 <p>Coin-holders can vote at any time, by any number of votes (which is
-actually counted by the amount of \$TOMO they bet on some masternode
+actually counted by the amount of $TOMO they bet on some masternode
 candidates). They can use masternode’s performance statistics in the
 governance <em>Voting DApp</em> as reference information to give votes. The set
-of masternodes is dynamically sorted by the amount of \$TOMO and counted
+of masternodes is dynamically sorted by the amount of $TOMO and counted
 up to ninety-nine, upon reception of votes.</p>
 <h2 id="reward-mechanism-reward-mechanism-unnumbered">Reward Mechanism {#reward-mechanism .unnumbered}</h2>
 <p>For each iteration of 990 blocks (called epoch), a checkpoint block is
@@ -429,15 +429,15 @@ all of the created blocks in the epoch and count number of signatures.
 The reward mechanism is designed following the policy as follow: the
 higher number of signatures one masternode has made, the more reward he
 earns. For instance, within an epoch, masternode A who has sealed twice
-the blocks than masternode B earns double amount of \$TOMO than
+the blocks than masternode B earns double amount of $TOMO than
 masternode B does.</p>
 <p>Furthermore, there is also a reward sharing ratio among coin-holders and
 masternode who has been elected supported by the coin-holders. For
-example, within an epoch, one masternode receives $X$ \$TOMO. Ten
-percent of $X$ is sent to the masternode’s address. Eighty percent of
-$X$ is shared in proportion to the amount of coins deposited and voted
+example, within an epoch, one masternode receives <script type="math/tex">X</script> $TOMO. Ten
+percent of <script type="math/tex">X</script> is sent to the masternode’s address. Eighty percent of
+<script type="math/tex">X</script> is shared in proportion to the amount of coins deposited and voted
 by the masternode and coin-holders, respectively. The last ten percent
-of $X$ credits to the foundation. Coin-holders who unvote before the
+of <script type="math/tex">X</script> credits to the foundation. Coin-holders who unvote before the
 checkpoint block will not receive any shared reward.</p>
 <h2 id="tomochain-consensus-protocol-secprotocoloverview">Tomochain Consensus Protocol {#Sec:ProtocolOverview}</h2>
 <h2 id="double-validation-process-double-validation-process-unnumbered">Double Validation Process {#double-validation-process .unnumbered}</h2>
@@ -483,7 +483,7 @@ existing blockchains as follows.</p>
 <h4 id="improvements-of-double-validation-over-single-validation">Improvements of Double Validation over Single Validation</h4>
 <p>Let’s show the improvements of DV compared to Single Validation through
 analyzing some attacking scenarios as shown in Fig.
-[fig:singlevalidation] and Fig. [fig:doublevalidation].</p>
+<script type="math/tex; mode=display">fig:singlevalidation</script> and Fig. <script type="math/tex; mode=display">fig:doublevalidation</script>.</p>
 <ul>
 <li>
 <p><strong>Single Validation</strong> In Single Validation, in an epoch, each
@@ -492,9 +492,11 @@ analyzing some attacking scenarios as shown in Fig.
     then validates the created block100. If block100 is invalid (that
     potentially means that M1 is an attacker) and contains a transaction
     that invalidly benefits M1, if M2 is honest (see Fig.
-    [fig:singlevalidation] [a]), it rejects block100 and creates
+    <script type="math/tex; mode=display">fig:singlevalidation</script>
+<script type="math/tex; mode=display">a</script>), it rejects block100 and creates
     another block100 next to block99. But, if M2 is an attacker
-    (see Fig. [fig:singlevalidation] [b]) that corporates with M1,
+    (see Fig. <script type="math/tex; mode=display">fig:singlevalidation</script>
+<script type="math/tex; mode=display">b</script>) that corporates with M1,
     M2 ignores the invalidation of block100, signs it and creates next
     block, namely block101 that is valid. Then, the next masternode M3
     verifies that block101 is valid, M3 signs block101 and creates a
@@ -507,12 +509,14 @@ analyzing some attacking scenarios as shown in Fig.
     reduces the probability of having garbage blocks in the blockchain.
     Assuming that M1 and M2 are the block creator and block verifier,
     respectively, for block100 in our DV. If block100 is invalid and M2
-    is honest (see Fig. [fig:doublevalidation] [a]), M2 will not
+    is honest (see Fig. <script type="math/tex; mode=display">fig:doublevalidation</script>
+<script type="math/tex; mode=display">a</script>), M2 will not
     seal this block. Therefore, the next block creator M3 for creating
     block101 will see that block100 does not have enough 2 signatures,
     thus reject block100 and create another block100 next to block99. On
     the other hand, if M2 is also an attacker pairing/handshaking with
-    M1 (see Fig. [fig:doublevalidation] [b]), M2 signs block100
+    M1 (see Fig. <script type="math/tex; mode=display">fig:doublevalidation</script>
+<script type="math/tex; mode=display">b</script>), M2 signs block100
     despite its invalidity (remember that the block verifier M2 is
     randomly selected, there has little chance of successfully pairing
     M1 and M2). Next, even though M3 will verify that block100 has two
@@ -524,44 +528,48 @@ analyzing some attacking scenarios as shown in Fig.
     the consistency of the blockchain and makes it hard to break.</p>
 </li>
 </ul>
-<p>[h]</p>
+<p>
+<script type="math/tex; mode=display">h</script>
+</p>
 <h2 id="randomization-for-block-verifiers-for-double-validation-randomization-for-block-verifiers-for-double-validation-unnumbered">Randomization for Block Verifiers for Double Validation {#randomization-for-block-verifiers-for-double-validation .unnumbered}</h2>
 <h3 id="the-first-masternodeblock-creator-the-first-masternodeblock-creator-unnumbered">The First Masternode/Block Creator {#the-first-masternodeblock-creator .unnumbered}</h3>
-<p>The first masternode/block creator in a given epoch $e$ can be selected
+<p>The first masternode/block creator in a given epoch <script type="math/tex">e</script> can be selected
 by a round-turn game and can be formal defined as an array:</p>
-<p>$$\begin{bmatrix} 
+<p>
+<script type="math/tex; mode=display">\begin{bmatrix} 
 \nu_1
 \end{bmatrix}
 = \begin{bmatrix} 
-V_{1.1}^e  \
-V_{1.2}^e\
-\cdot\
-\cdot\
-\cdot\
-V_{1.n-1}^e\
-V_{1.n}^e\
-\end{bmatrix}$$</p>
+V_{1.1}^e  \\
+V_{1.2}^e\\
+\cdot\\
+\cdot\\
+\cdot\\
+V_{1.n-1}^e\\
+V_{1.n}^e\\
+\end{bmatrix}</script>
+</p>
 <h3 id="random-matrix-and-smart-contract-random-matrix-and-smart-contract-unnumbered">Random Matrix and Smart Contract {#random-matrix-and-smart-contract .unnumbered}</h3>
-<p>Let $m$ be the number of masternodes, $n$ be the number of slots in an
+<p>Let <script type="math/tex">m</script> be the number of masternodes, <script type="math/tex">n</script> be the number of slots in an
 epoch. In order to randomly generate the block verifiers for the next
-epoch $e+1$, the process is performed by the following steps.</p>
+epoch <script type="math/tex">e+1</script>, the process is performed by the following steps.</p>
 <ul>
 <li>
 <p><strong>Step 1: Random Numbers Generation and Commitment Phase:</strong></p>
-<p>First, at the beginning of epoch $e$, each masternode $V_i$ will
-securely create an array of $n+1$ special random numbers
-$ Recommend_i= [ r_{i.1}, r_{i.2}, ..., r_{i.n}, \theta_i]$, where
-$r_{i.k}\in [1, ..., m]$ indicating the recommendation of ordered
-list of block verifiers for the next epoch of $V_i$, and
-$\theta_i \in {-1, 0, 1}$ is used for increasing the
+<p>First, at the beginning of epoch <script type="math/tex">e</script>, each masternode <script type="math/tex">V_i</script> will
+securely create an array of <script type="math/tex">n+1</script> special random numbers
+<script type="math/tex"> Recommend_i= [ r_{i.1}, r_{i.2}, ..., r_{i.n}, \theta_i]</script>, where
+<script type="math/tex">r_{i.k}\in [1, ..., m]</script> indicating the recommendation of ordered
+list of block verifiers for the next epoch of <script type="math/tex">V_i</script>, and
+<script type="math/tex">\theta_i \in \{-1, 0, 1\}</script> is used for increasing the
 unpredictability of the random numbers. Second, each masternode
-$V_i$ has to encrypt the array $Recommend_i$ using a secret key, say
-$Secret_i = Encrypt (Recommend_i)$. Next, each masternode forms a
-"<em>lock</em>” message that contains encrypted shares $Secret_i$; signs
+<script type="math/tex">V_i</script> has to encrypt the array <script type="math/tex">Recommend_i</script> using a secret key, say
+<script type="math/tex">Secret_i = Encrypt (Recommend_i)</script>. Next, each masternode forms a
+"<em>lock</em>” message that contains encrypted shares <script type="math/tex">Secret_i</script>; signs
 this message with its blockchain’s private key, specifies the
 epoch’s number and attaches its public key. In this case, every
 masternode can check who created this <em>lock</em> message and which epoch
-it relates to. Then, each node $V_i$ sends this <em>lock</em> message to a
+it relates to. Then, each node <script type="math/tex">V_i</script> sends this <em>lock</em> message to a
 <strong>Smart contract</strong> stored in a block of the blockchain, so
 eventually each masternode collects and knows the <em>lock</em>s from all
 other masternodes.</p>
@@ -570,86 +578,92 @@ other masternodes.</p>
 <p><strong>Step 2: Discovery and Recovery Phase:</strong> The discovery phase is
     where a masternode sends an ”<em>unlock</em>” message, or special value for
     other masternodes to open its <em>lock</em>. A <em>lock</em> is like a black box
-    (with a secret value $Secret_i$ encrypted of $Recommend_i$ in it),
+    (with a secret value <script type="math/tex">Secret_i</script> encrypted of <script type="math/tex">Recommend_i</script> in it),
     and the act of opening involves a key that reveals the box to
-    retrieve the value of $Recommend_i$. Eventually, a masternode has
+    retrieve the value of <script type="math/tex">Recommend_i</script>. Eventually, a masternode has
     both <em>lock</em>s and <em>unlock</em>s of others. If some elector is an
     adversary and can publish its <em>lock</em> but not publish its <em>unlock</em>,
     in this case, other masternodes can ignore the adversary’s <em>lock</em>
-    and set all its random values be $1$ as default. The idea is simple:
+    and set all its random values be <script type="math/tex">1</script> as default. The idea is simple:
     a masternode can keep working successfully even if some masternodes
     are adversaries.</p>
 </li>
 <li>
 <p><strong>Step 3: Assembled Matrix and Computation Phase:</strong> At the point of
-    the slot $n^{th}$ of the epoch $e$, the secret arrays $Secret_I$ in
+    the slot <script type="math/tex">n^{th}</script> of the epoch <script type="math/tex">e</script>, the secret arrays <script type="math/tex">Secret_I</script> in
     the smart contract will be decrypted by each masternode and return
-    the plain version of $Recommend_i$. Each tuple of the first $n$
-    numbers of each $V_i$ will be assembled as the $i^{th}$ column of an
-    $n \times m$ matrix. All the last number $\theta_i$ forms a
-    $m\times 1$ matrix. Then each nodes will compute the block verifiers
+    the plain version of <script type="math/tex">Recommend_i</script>. Each tuple of the first <script type="math/tex">n</script>
+    numbers of each <script type="math/tex">V_i</script> will be assembled as the <script type="math/tex">i^{th}</script> column of an
+    <script type="math/tex">n \times m</script> matrix. All the last number <script type="math/tex">\theta_i</script> forms a
+    <script type="math/tex">m\times 1</script> matrix. Then each nodes will compute the block verifiers
     ordered list by some mathematical operations as explained below. The
-    resulting output is a matrix $n \times 1$ indicating the order of
-    block verifiers for the next epoch $e+1$.</p>
+    resulting output is a matrix <script type="math/tex">n \times 1</script> indicating the order of
+    block verifiers for the next epoch <script type="math/tex">e+1</script>.</p>
 </li>
 </ul>
 <h3 id="the-second-masternodeblock-verifier-the-second-masternodeblock-verifier-unnumbered">The Second Masternode/Block Verifier {#the-second-masternodeblock-verifier .unnumbered}</h3>
-<p>Then, each node soon compute the common array $\nu_2$ for the order of
-the block verifiers by the following steps as in Equation [eq:matrix].</p>
-<p>$$\label{eq:matrix}
-\begin{bmatrix} \nu'<em>2
+<p>Then, each node soon compute the common array <script type="math/tex">\nu_2</script> for the order of
+the block verifiers by the following steps as in Equation <script type="math/tex; mode=display">eq:matrix</script>.</p>
+<p>
+<script type="math/tex; mode=display">\label{eq:matrix}
+\begin{bmatrix} \nu'_2
 \end{bmatrix}
 =
 \begin{bmatrix}
-v</em>{2.1}^{e+1} \
-v_{2.2}^{e+1} \
-\vdots \
+v_{2.1}^{e+1} \\
+v_{2.2}^{e+1} \\
+\vdots \\
 v_{2.n}^{e+1}
 \end{bmatrix}
 =
 \begin{bmatrix}
-r_{1.1}  &amp; r_{2.1}            &amp; \cdots  &amp; r_{m.1}  \
-r_{1.2}     &amp; r_{2.2}       &amp; \ddots  &amp; \vdots   \
-r_{1.3}      &amp;  \ddots   &amp; \ddots  &amp; r_{m.3}  \
-\vdots  &amp;              &amp; r_{m-1.n-1}  &amp; r_{m.n-1}  \
-r_{1.n}      &amp; \cdots      &amp; r_{m-1.n}      &amp; r_{m.n}
-\end{bmatrix} <br />
+r_{1.1}  & r_{2.1}            & \cdots  & r_{m.1}  \\
+r_{1.2}     & r_{2.2}       & \ddots  & \vdots   \\
+r_{1.3}      &  \ddots   & \ddots  & r_{m.3}  \\
+\vdots  &              & r_{m-1.n-1}  & r_{m.n-1}  \\
+r_{1.n}      & \cdots      & r_{m-1.n}      & r_{m.n}
+\end{bmatrix}   
 \begin{bmatrix}
-\theta_1  \
-\theta_2  \
-\theta_3 \
-\vdots  \
+\theta_1  \\
+\theta_2  \\
+\theta_3 \\
+\vdots  \\
 \theta_m
-\end{bmatrix}$$</p>
-<p>$$\label{eq:eq2}
+\end{bmatrix}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\label{eq:eq2}
 \begin{bmatrix} \nu_2
 \end{bmatrix}
 =
-\begin{bmatrix} \nu'<em>2 &amp; mod &amp; m
+\begin{bmatrix} \nu'_2 & mod & m
 \end{bmatrix}
 =
 \begin{bmatrix}
-\left| v</em>{2.1}^{e+1}\right| &amp; mod &amp; m \
-\left| v_{2.2}^{e+1} \right| &amp; mod &amp;  m\
-\vdots \
-\left| v_{2.n}^{e+1} \right| &amp; mod &amp; m
-\end{bmatrix}$$</p>
-<p>Then, $\nu_2$ is obtained by modulo operation of element values of
-$\nu'_2$ as in Equation [eq:eq2]:</p>
+\left| v_{2.1}^{e+1}\right| & mod & m \\
+\left| v_{2.2}^{e+1} \right| & mod &  m\\
+\vdots \\
+\left| v_{2.n}^{e+1} \right| & mod & m
+\end{bmatrix}</script>
+</p>
+<p>Then, <script type="math/tex">\nu_2</script> is obtained by modulo operation of element values of
+<script type="math/tex">\nu'_2</script> as in Equation <script type="math/tex; mode=display">eq:eq2</script>:</p>
 <h2 id="finality-analysis-finality-analysis-unnumbered">Finality Analysis {#finality-analysis .unnumbered}</h2>
 <p>There is a standard definition of “total economic finality”: it takes
-place when $\frac{3}{4}$ of all masternodes make maximum-odds bets that
+place when <script type="math/tex">\frac{3}{4}</script> of all masternodes make maximum-odds bets that
 a given block or state will be finalized. This condition offers very
 strong incentives for masternodes to never try colluding revert the
 block: once masternodes make such maximum-odds bets, in any blockchain
 where that block or state is not present, the masternodes lose their
 entire deposit.</p>
 <p>keeps that standardization in the design so that one block is considered
-as irreversible if it collects up to $\frac{3}{4}$ signatures of all
+as irreversible if it collects up to <script type="math/tex">\frac{3}{4}</script> signatures of all
 masternodes committee. The time-line of blockchain creation process,
 checking finality and mark the block as immutable is described as in
-Figure [fig:ChainMaking] below.</p>
-<p>[h] <img alt="image" src="../figures/ChainMakingProcess3.jpg" />{width="6.0"}</p>
+Figure <script type="math/tex; mode=display">fig:ChainMaking</script> below.</p>
+<p>
+<script type="math/tex; mode=display">h</script>
+<img alt="image" src="../figures/ChainMakingProcess3.jpg" />{width="6.0"}</p>
 <h2 id="consensus-protocol-formalization-secprotocolformalization">Consensus Protocol: Formalization {#Sec:ProtocolFormalization}</h2>
 <h2 id="basic-concepts-protocol-description-basic-concepts-protocol-description-unnumbered">Basic Concepts &amp; Protocol Description {#basic-concepts-protocol-description .unnumbered}</h2>
 <p>We begin by describing the blockchain protocol in the "stakeholder and
@@ -674,7 +688,7 @@ time slot (at most) one ledger <em>block</em>. Players are equipped with
 (roughly synchronized) clocks that indicate the current slot. This will
 permit them to carry out a distributed protocol intending to
 collectively assign a block to this current slot. In general, each slot
-$sl_r$ is indexed by an integer $r \in {1, 2, . . .}$, and we assume
+<script type="math/tex">sl_r</script> is indexed by an integer <script type="math/tex">r \in \{1, 2, . . .\}</script>, and we assume
 that the real time window that corresponds to each slot has the
 following properties.</p>
 <ol>
@@ -697,52 +711,59 @@ following properties.</p>
     time window.</p>
 </li>
 </ol>
-<p>In each slot $sl_r$, and for each active masternode $V_j$ there will be
-a set $S_j(r)$ of public-keys and stake pairs of the form
-$(vk_i,s_i) \in {0,1}^* \times N$, for $i = 1,...,n_r$ where $n_r$ is
+<p>In each slot <script type="math/tex">sl_r</script>, and for each active masternode <script type="math/tex">V_j</script> there will be
+a set <script type="math/tex">S_j(r)</script> of public-keys and stake pairs of the form
+<script type="math/tex">(vk_i,s_i) \in {0,1}^* \times N</script>, for <script type="math/tex">i = 1,...,n_r</script> where <script type="math/tex">n_r</script> is
 the number of users introduced up to that slot that will represent who
-are the active participants in the view of $V_j$. Public-keys will be
+are the active participants in the view of <script type="math/tex">V_j</script>. Public-keys will be
 marked as “idle” if the corresponding stakeholder has been corrupted.</p>
-<p>As mentioned in Section [Sec:TomochainOverview], in our setting, we
-assume that the fixed collection of $m$ masternodes
-$V_1, V_2, ...., V_m$ interact throughout the protocol. Masternode $V_i$
-possesses $s_i$ stake (coin) before the protocol starts. For each $V_i$
-a verification and signing key pair $(vk_i,sk_i)$ for a prescribed
+<p>As mentioned in Section <script type="math/tex; mode=display">Sec:TomochainOverview</script>, in our setting, we
+assume that the fixed collection of <script type="math/tex">m</script> masternodes
+<script type="math/tex">V_1, V_2, ...., V_m</script> interact throughout the protocol. Masternode <script type="math/tex">V_i</script>
+possesses <script type="math/tex">s_i</script> stake (coin) before the protocol starts. For each <script type="math/tex">V_i</script>
+a verification and signing key pair <script type="math/tex">(vk_i,sk_i)</script> for a prescribed
 signature scheme is generated; we assume without loss of generality that
-the verification keys $vk_1, . . .$ are known by all stakeholders.
+the verification keys <script type="math/tex">vk_1, . . .</script> are known by all stakeholders.
 Before describing the protocol, we establish basic definitions following
 the notation of @Garay2015.</p>
-<p>[Genesis Block] The genesis block $B_0$ contains the list of
+<p>
+<script type="math/tex; mode=display">Genesis Block</script> The genesis block <script type="math/tex">B_0</script> contains the list of
 stakeholders identified by their public-keys, their respective stakes
-$(vk_1, s_1), . . . , (vk_n, s_n)$ and auxiliary information $\rho$,
-where the auxiliary information $\rho$ will be used to seed the slot
+<script type="math/tex">(vk_1, s_1), . . . , (vk_n, s_n)</script> and auxiliary information <script type="math/tex">\rho</script>,
+where the auxiliary information <script type="math/tex">\rho</script> will be used to seed the slot
 leader election process.</p>
-<p>[State] A state is an encoded string $st \in {0,1}^\lambda$.</p>
-<p>[Block] A block $B$ generated at a slot $ sl_i \in {sl_1,...,sl_R}$
-contains the current state $st \in {0, 1}^{\lambda}$, data
-$d \in {0, 1}^{*}$, the slot number $sl_i$ and a signature
-$\Sigma  =  Sign_{ski} (st, d, sl_i)$ computed under $sk_i$
-corresponding to the masternode $V_i$ generating the block.</p>
-<p>[Blockchain] A blockchain $C$ (or simply chain) relative to the
-genesis block $B_0$ is a sequence of blocks $B_1,..., B_n$ associated
-with a strictly increasing sequence of slots for which the state $st_i$
-of $B_i$ is equal to $ H (B_{i-1})$, where $H$ is a prescribed
-collision-resistant hash function. The length of a chain $len(C) = n$ is
-its number of blocks. The block $B_n$ is the head of the chain, denoted
-$head(C)$. We treat the empty string $\epsilon$ as a legal chain and by
-convention set $head(\epsilon) = \epsilon$.</p>
-<p>[Epoch] An epoch is a set of $R$ adjacent slots
-$S = {sl_1, . . . , sl_R}$. The value $R$ is also a parameter (slots
+<p>
+<script type="math/tex; mode=display">State</script> A state is an encoded string <script type="math/tex">st \in \{0,1\}^\lambda</script>.</p>
+<p>
+<script type="math/tex; mode=display">Block</script> A block <script type="math/tex">B</script> generated at a slot <script type="math/tex"> sl_i \in \{sl_1,...,sl_R\}</script>
+contains the current state <script type="math/tex">st \in \{0, 1\}^{\lambda}</script>, data
+<script type="math/tex">d \in \{0, 1\}^{*}</script>, the slot number <script type="math/tex">sl_i</script> and a signature
+<script type="math/tex">\Sigma  =  Sign_{ski} (st, d, sl_i)</script> computed under <script type="math/tex">sk_i</script>
+corresponding to the masternode <script type="math/tex">V_i</script> generating the block.</p>
+<p>
+<script type="math/tex; mode=display">Blockchain</script> A blockchain <script type="math/tex">C</script> (or simply chain) relative to the
+genesis block <script type="math/tex">B_0</script> is a sequence of blocks <script type="math/tex">B_1,..., B_n</script> associated
+with a strictly increasing sequence of slots for which the state <script type="math/tex">st_i</script>
+of <script type="math/tex">B_i</script> is equal to <script type="math/tex"> H (B_{i-1})</script>, where <script type="math/tex">H</script> is a prescribed
+collision-resistant hash function. The length of a chain <script type="math/tex">len(C) = n</script> is
+its number of blocks. The block <script type="math/tex">B_n</script> is the head of the chain, denoted
+<script type="math/tex">head(C)</script>. We treat the empty string <script type="math/tex">\epsilon</script> as a legal chain and by
+convention set <script type="math/tex">head(\epsilon) = \epsilon</script>.</p>
+<p>
+<script type="math/tex; mode=display">Epoch</script> An epoch is a set of <script type="math/tex">R</script> adjacent slots
+<script type="math/tex">S = \{sl_1, . . . , sl_R\}</script>. The value <script type="math/tex">R</script> is also a parameter (slots
 number in each epoch) of the protocol we analyze in our model.</p>
-<p>As mentioned earlier, in our model, we set each time <em>slot</em> $sl_i$ as 2
-seconds; an epoch is a set $R$ of 990 slots
-${ sl_1, sl_2, ..., sl_{990}}$ (an epoch time duration equals to 1980
+<p>As mentioned earlier, in our model, we set each time <em>slot</em> <script type="math/tex">sl_i</script> as 2
+seconds; an epoch is a set <script type="math/tex">R</script> of 990 slots
+<script type="math/tex">\{ sl_1, sl_2, ..., sl_{990}\}</script> (an epoch time duration equals to 1980
 seconds).</p>
 <p>In summary, the consensus protocol of can be formalized in
-Algorithm [Al:ValidatorGeneration]. The
-Algorithm [Al:ValidatorGeneration] is simulated and explained as a
-process shown in Fig. [fig:EpochProcess].</p>
-<p>[h] <img alt="image" src="../figures/Figure_Epoch.jpg" />{width="0.9\linewidth"}</p>
+Algorithm <script type="math/tex; mode=display">Al:ValidatorGeneration</script>. The
+Algorithm <script type="math/tex; mode=display">Al:ValidatorGeneration</script> is simulated and explained as a
+process shown in Fig. <script type="math/tex; mode=display">fig:EpochProcess</script>.</p>
+<p>
+<script type="math/tex; mode=display">h</script>
+<img alt="image" src="../figures/Figure_Epoch.jpg" />{width="0.9\linewidth"}</p>
 <h1 id="security-analysis-secsecurityanalysis">Security Analysis {#Sec:SecurityAnalysis}</h1>
 <h2 id="nothing-at-stake-nothing-at-stake-unnumbered">Nothing-at-stake {#nothing-at-stake .unnumbered}</h2>
 <p>Nothing-at-stake is a well-known problem in PoS-based blockchain, just
@@ -774,23 +795,23 @@ his turn, only one block then can be validated by the second randomly
 selected masternode.</p>
 <h2 id="long-range-attack-long-range-attack-unnumbered">Long-range attack {#long-range-attack .unnumbered}</h2>
 <p>In , block is valid only if it collects double validation and finalized
-once $\frac{3}{4}$ of masternodes verify. Therefore, as long as the
+once <script type="math/tex">\frac{3}{4}</script> of masternodes verify. Therefore, as long as the
 number of attackers or malicious nodes and/or fail-stop nodes is less
-equal than $\frac{1}{4}$ the number of masternodes, the number of
-masternodes signing a block is at least $\frac{3}{4}$ the total number
+equal than <script type="math/tex">\frac{1}{4}</script> the number of masternodes, the number of
+masternodes signing a block is at least <script type="math/tex">\frac{3}{4}</script> the total number
 of masternodes, which makes the block finalized. Thus, there is no
 chance for one malicious masternode to create longer valid chain because
 other masternodes will refuse it.</p>
 <h2 id="censorship-attack-censorship-attack-unnumbered">Censorship Attack {#censorship-attack .unnumbered}</h2>
-<p>If there are more than $\frac{3}{4}$ malicious masternodes in ,
+<p>If there are more than <script type="math/tex">\frac{3}{4}</script> malicious masternodes in ,
 censorship attack might happen. For example, these masternodes refuse
 valid blocks or simply become inactive. In this case, chain is stuck.</p>
 <p>In fact, masternodes are paid for their effort of correctly working so
 that the chain is actively updated in a consistent manner. More
 importantly, becoming masternode means a certain amount of coins is
-locked, 50 000 \$TOMO in particular. As a result, in order to control
-more than$\frac{3}{4}$ masternodes, attackers must hold a considerable
-amount of \$TOMO and gain huge support from coin-holders. And because of
+locked, 50 000 $TOMO in particular. As a result, in order to control
+more than<script type="math/tex">\frac{3}{4}</script> masternodes, attackers must hold a considerable
+amount of $TOMO and gain huge support from coin-holders. And because of
 this, the attackers do not have incentives to do any malicious action to
 harm the chain.</p>
 <p>However, in worst case, has to do a soft fork in order to reduce number
@@ -799,8 +820,8 @@ mechanisms for those malicious masternodes.</p>
 <h2 id="relay-attack-relay-attack-unnumbered">Relay Attack {#relay-attack .unnumbered}</h2>
 <p>supports EIP155\
 <strong>(https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md)</strong>.
-Transactions in are included $CHAIN_ID$ specified for different public
-chains. Table [table:chainid] shows recognized $CHAIN_ID$s.</p>
+Transactions in are included <script type="math/tex">CHAIN\_ID</script> specified for different public
+chains. Table <script type="math/tex; mode=display">table:chainid</script> shows recognized <script type="math/tex">CHAIN\_ID</script>s.</p>
 <p>CHAIN_ID   Chain(s)</p>
 <hr />
 <p>1           Ethereum mainnet
@@ -890,7 +911,7 @@ whose consensus protocol is termed <em>Delegated Proof-of-Stake</em> (DPoS).
 DPoS is similar to the Proof-of-Stake Voting consensus of in the sense
 that masternodes (block creators or <em>witnesses</em> in DPoS) are elected
 through a voting system. However, requires that masternodes need to
-deposit a required minimum amount of \$TOMO to become a masternode
+deposit a required minimum amount of $TOMO to become a masternode
 candidate, which puts more pressure on the masternodes to work honestly.
 Furthermore, the <strong>Double Validation</strong> mechanism of lowers the
 probability of handshaking attacks and having invalid blocks, as
@@ -943,7 +964,7 @@ distribution function is uniform eventually.</p>
     could be offset by the revenues generated. In this context, the cost
     of network infrastructure consists of two parts: the physical cost
     of having hardware such as servers, memories that passes the network
-    technical requirements; and the capital cost of having \$TOMO locked
+    technical requirements; and the capital cost of having $TOMO locked
     into smart-contracts. The revenues for Masternodes would primarily
     come from Reward Engine emission, and later on from service revenues
     such as token exchange fees provided by applications running on top
@@ -1066,6 +1087,8 @@ Online available 25/05/2018.</p>
       <script src="../assets/javascripts/application.a59e2a89.js"></script>
       
       <script>app.initialize({version:"0.17.4",url:{base:".."}})</script>
+      
+        <script src="../js/MathJax.js?config=TeX-AMS_HTML"></script>
       
     
     
