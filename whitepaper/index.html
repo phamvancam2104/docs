@@ -350,7 +350,7 @@ compare with several existing blockchains in
 Section <script type="math/tex; mode=display">Sec:relatedwork</script>. Finally, we conclude the paper in Section
 <script type="math/tex; mode=display">Sec:Conclusion</script>.</p>
 <h1 id="tomochain-masternode-design">Tomochain Masternode Design</h1>
-<h2 id="the-tomochain-architecture-sectomochainoverview">The Tomochain architecture {#Sec:TomochainOverview}</h2>
+<h2 id="Sec:TomochainOverview">The Tomochain architecture</h2>
 <p>The blockchain is produced and maintained by a set of <em>masternodes</em> in a
 consistent manner through the protocol as shown in Fig.
 <script type="math/tex; mode=display">fig:architecture</script>. These masternodes are full nodes that hold $TOMO.
@@ -374,9 +374,9 @@ namely <em>Double Validation</em> complemented with a <em>Randomization</em>
 mechanism. This new technique significantly decreases the probability of
 having invalid blocks in the blockchain. These enhancements and the
 components of are step-by-step detailed in the followings.</p>
-<p><img alt="image" src="../figures/architecture.jpg" />{width="\linewidth"}</p>
-<h2 id="stakeholders-voting-secstakevoting">Stakeholders &amp; Voting {#Sec:StakeVoting}</h2>
-<h2 id="coin-holders-masternodes-coin-holders-masternodes-unnumbered">Coin Holders, Masternodes {#coin-holders-masternodes .unnumbered}</h2>
+<p><img alt="image" src="../figures/architecture.jpg" width="\linewidth" /></p>
+<h2 id="Sec:StakeVoting">Stakeholders &amp; Voting</h2>
+<h2 class="unnumbered" id="coin-holders-masternodes">Coin Holders, Masternodes</h2>
 <p>Coin-holder is as simple as its name: users who join the network, who
 own and transfer $TOMO. Masternodes are full-nodes which maintain a
 copy of the blockchain, produce blocks and keep the chain consistent. It
@@ -409,7 +409,7 @@ strategy in order to maximize their profit from the investment.</p>
 to race for their position so that all weak masternodes will eventually
 be eliminated. Therefore, only the strongest masternodes are voted and
 can flourish.</p>
-<h2 id="voting-masternode-committee-voting-masternode-committee-unnumbered">Voting &amp; Masternode Committee {#voting-masternode-committee .unnumbered}</h2>
+<h2 class="unnumbered" id="voting-masternode-committee">Voting &amp; Masternode Committee</h2>
 <p>There are maximum ninety-nine masternodes elected in the masternode
 committee. The required amount of deposit for masternode role is set at
 50 000 $TOMO. This amount is locked in a <em>voting smart contract</em>. Once
@@ -423,7 +423,7 @@ candidates). They can use masternode’s performance statistics in the
 governance <em>Voting DApp</em> as reference information to give votes. The set
 of masternodes is dynamically sorted by the amount of $TOMO and counted
 up to ninety-nine, upon reception of votes.</p>
-<h2 id="reward-mechanism-reward-mechanism-unnumbered">Reward Mechanism {#reward-mechanism .unnumbered}</h2>
+<h2 class="unnumbered" id="reward-mechanism">Reward Mechanism</h2>
 <p>For each iteration of 990 blocks (called epoch), a checkpoint block is
 created, which implements only reward works. The masternode, who takes
 turn in the circular and sequential order to create block, has to scan
@@ -441,8 +441,8 @@ percent of <script type="math/tex">X</script> is sent to the masternode’s addr
 by the masternode and coin-holders, respectively. The last ten percent
 of <script type="math/tex">X</script> credits to the foundation. Coin-holders who unvote before the
 checkpoint block will not receive any shared reward.</p>
-<h2 id="tomochain-consensus-protocol-secprotocoloverview">Tomochain Consensus Protocol {#Sec:ProtocolOverview}</h2>
-<h2 id="double-validation-process-double-validation-process-unnumbered">Double Validation Process {#double-validation-process .unnumbered}</h2>
+<h2 id="Sec:ProtocolOverview">Tomochain Consensus Protocol</h2>
+<h2 class="unnumbered" id="double-validation-process">Double Validation Process</h2>
 <p>In , masternodes share equal responsibility to run the system and keep
 it stable. Full nodes should run on powerful hardware configuration and
 high-speed network connectivity in order to ensure the required block
@@ -533,8 +533,8 @@ analyzing some attacking scenarios as shown in Fig.
 <p>
 <script type="math/tex; mode=display">h</script>
 </p>
-<h2 id="randomization-for-block-verifiers-for-double-validation-randomization-for-block-verifiers-for-double-validation-unnumbered">Randomization for Block Verifiers for Double Validation {#randomization-for-block-verifiers-for-double-validation .unnumbered}</h2>
-<h3 id="the-first-masternodeblock-creator-the-first-masternodeblock-creator-unnumbered">The First Masternode/Block Creator {#the-first-masternodeblock-creator .unnumbered}</h3>
+<h2 class="unnumbered" id="randomization-for-block-verifiers-for-double-validation">Randomization for Block Verifiers for Double Validation</h2>
+<h3 class="unnumbered" id="the-first-masternodeblock-creator">The First Masternode/Block Creator</h3>
 <p>The first masternode/block creator in a given epoch <script type="math/tex">e</script> can be selected
 by a round-turn game and can be formal defined as an array:</p>
 <p>
@@ -551,7 +551,7 @@ V_{1.n-1}^e\\
 V_{1.n}^e\\
 \end{bmatrix}</script>
 </p>
-<h3 id="random-matrix-and-smart-contract-random-matrix-and-smart-contract-unnumbered">Random Matrix and Smart Contract {#random-matrix-and-smart-contract .unnumbered}</h3>
+<h3 class="unnumbered" id="random-matrix-and-smart-contract">Random Matrix and Smart Contract</h3>
 <p>Let <script type="math/tex">m</script> be the number of masternodes, <script type="math/tex">n</script> be the number of slots in an
 epoch. In order to randomly generate the block verifiers for the next
 epoch <script type="math/tex">e+1</script>, the process is performed by the following steps.</p>
@@ -603,7 +603,7 @@ other masternodes.</p>
     block verifiers for the next epoch <script type="math/tex">e+1</script>.</p>
 </li>
 </ul>
-<h3 id="the-second-masternodeblock-verifier-the-second-masternodeblock-verifier-unnumbered">The Second Masternode/Block Verifier {#the-second-masternodeblock-verifier .unnumbered}</h3>
+<h3 class="unnumbered" id="the-second-masternodeblock-verifier">The Second Masternode/Block Verifier</h3>
 <p>Then, each node soon compute the common array <script type="math/tex">\nu_2</script> for the order of
 the block verifiers by the following steps as in Equation <script type="math/tex; mode=display">eq:matrix</script>.</p>
 <p>
@@ -650,7 +650,7 @@ r_{1.n}      & \cdots      & r_{m-1.n}      & r_{m.n}
 </p>
 <p>Then, <script type="math/tex">\nu_2</script> is obtained by modulo operation of element values of
 <script type="math/tex">\nu'_2</script> as in Equation <script type="math/tex; mode=display">eq:eq2</script>:</p>
-<h2 id="finality-analysis-finality-analysis-unnumbered">Finality Analysis {#finality-analysis .unnumbered}</h2>
+<h2 class="unnumbered" id="finality-analysis">Finality Analysis</h2>
 <p>There is a standard definition of “total economic finality”: it takes
 place when <script type="math/tex">\frac{3}{4}</script> of all masternodes make maximum-odds bets that
 a given block or state will be finalized. This condition offers very
@@ -665,9 +665,9 @@ checking finality and mark the block as immutable is described as in
 Figure <script type="math/tex; mode=display">fig:ChainMaking</script> below.</p>
 <p>
 <script type="math/tex; mode=display">h</script>
-<img alt="image" src="../figures/ChainMakingProcess3.jpg" />{width="6.0"}</p>
-<h2 id="consensus-protocol-formalization-secprotocolformalization">Consensus Protocol: Formalization {#Sec:ProtocolFormalization}</h2>
-<h2 id="basic-concepts-protocol-description-basic-concepts-protocol-description-unnumbered">Basic Concepts &amp; Protocol Description {#basic-concepts-protocol-description .unnumbered}</h2>
+<img alt="image" src="../figures/ChainMakingProcess3.jpg" width="6.0" /></p>
+<h2 id="Sec:ProtocolFormalization">Consensus Protocol: Formalization</h2>
+<h2 class="unnumbered" id="basic-concepts-protocol-description">Basic Concepts &amp; Protocol Description</h2>
 <p>We begin by describing the blockchain protocol in the "stakeholder and
 voting” setting, where leaders are assigned to blockchain slots with
 probability proportional to their (fixed) initial stake and votes
@@ -683,7 +683,7 @@ follow the way of formalization in the recent works in the literature
 like  @Cardano2017 and  @Pass2017 [@PassCrypto2017]. In particular, we
 recall the following concepts and definitions that were presented
 in @Cardano2017:</p>
-<h2 id="time-slots-epoch-time-slots-epoch-unnumbered">Time, Slots, Epoch {#time-slots-epoch .unnumbered}</h2>
+<h2 class="unnumbered" id="time-slots-epoch">Time, Slots, Epoch</h2>
 <p>We consider a setting where time is divided into discrete units called
 <em>slots</em>. A ledger, described in more detail below, associates with each
 time slot (at most) one ledger <em>block</em>. Players are equipped with
@@ -765,9 +765,9 @@ Algorithm <script type="math/tex; mode=display">Al:ValidatorGeneration</script>
 process shown in Fig. <script type="math/tex; mode=display">fig:EpochProcess</script>.</p>
 <p>
 <script type="math/tex; mode=display">h</script>
-<img alt="image" src="../figures/Figure_Epoch.jpg" />{width="0.9\linewidth"}</p>
-<h1 id="security-analysis-secsecurityanalysis">Security Analysis {#Sec:SecurityAnalysis}</h1>
-<h2 id="nothing-at-stake-nothing-at-stake-unnumbered">Nothing-at-stake {#nothing-at-stake .unnumbered}</h2>
+<img alt="image" src="../figures/Figure_Epoch.jpg" width="0.9\linewidth" /></p>
+<h1 id="Sec:SecurityAnalysis">Security Analysis</h1>
+<h2 class="unnumbered" id="nothing-at-stake">Nothing-at-stake</h2>
 <p>Nothing-at-stake is a well-known problem in PoS-based blockchain, just
 like 51% attack in PoW algorithm. PoW-based miners require CapEx
 (capital expenditures) for buying mining equipment such as ASICs and
@@ -795,7 +795,7 @@ each epoch. Furthermore, the Double Validation mechanism eliminates the
 second issue because even one malicious masternode creates two blocks at
 his turn, only one block then can be validated by the second randomly
 selected masternode.</p>
-<h2 id="long-range-attack-long-range-attack-unnumbered">Long-range attack {#long-range-attack .unnumbered}</h2>
+<h2 class="unnumbered" id="long-range-attack">Long-range attack</h2>
 <p>In , block is valid only if it collects double validation and finalized
 once <script type="math/tex">\frac{3}{4}</script> of masternodes verify. Therefore, as long as the
 number of attackers or malicious nodes and/or fail-stop nodes is less
@@ -804,7 +804,7 @@ masternodes signing a block is at least <script type="math/tex">\frac{3}{4}</scr
 of masternodes, which makes the block finalized. Thus, there is no
 chance for one malicious masternode to create longer valid chain because
 other masternodes will refuse it.</p>
-<h2 id="censorship-attack-censorship-attack-unnumbered">Censorship Attack {#censorship-attack .unnumbered}</h2>
+<h2 class="unnumbered" id="censorship-attack">Censorship Attack</h2>
 <p>If there are more than <script type="math/tex">\frac{3}{4}</script> malicious masternodes in ,
 censorship attack might happen. For example, these masternodes refuse
 valid blocks or simply become inactive. In this case, chain is stuck.</p>
@@ -819,7 +819,7 @@ harm the chain.</p>
 <p>However, in worst case, has to do a soft fork in order to reduce number
 of masternodes to keep the chain running and figure out slasher
 mechanisms for those malicious masternodes.</p>
-<h2 id="relay-attack-relay-attack-unnumbered">Relay Attack {#relay-attack .unnumbered}</h2>
+<h2 class="unnumbered" id="relay-attack">Relay Attack</h2>
 <p>supports EIP155\
 <strong>(https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md)</strong>.
 Transactions in are included <script type="math/tex">CHAIN\_ID</script> specified for different public
@@ -890,8 +890,10 @@ chains. Table <script type="math/tex; mode=display">table:chainid</script> shows
 </tr>
 </tbody>
 </table>
-<p>: Chains and chain_id<span data-label="table:chainid"></span></p>
-<h2 id="safety-and-liveness-safety-and-liveness-unnumbered">Safety and liveness {#safety-and-liveness .unnumbered}</h2>
+<dl>
+<dd>Chains and chain_id<span data-label="table:chainid"></span></dd>
+</dl>
+<h2 class="unnumbered" id="safety-and-liveness">Safety and liveness</h2>
 <p>Safety implies having a single agreed upon chain where there are not two
 or more competing chains with valid transactions in either @Safety. A
 consensus protocol can be <em>safe</em> when blocks have settlement finality,
@@ -906,21 +908,21 @@ creation masternodes list is ordered in a pre-determined way for each
 epoch, thus if even an attacking masternode omits some transactions, the
 latter will be processed and validated by the next honest masternode in
 the next block.</p>
-<h2 id="ddos-attack-ddos-attack-unnumbered">DDOS Attack {#ddos-attack .unnumbered}</h2>
+<h2 class="unnumbered" id="ddos-attack">DDOS Attack</h2>
 <p>Masternodes are encouraged to run in well-known public cloud providers
 such as AWS, Google Cloud or Microsoft Azure which provides multiple
 DDOS prevention mechanisms. Even in case that some nodes are attacked or
 fail-stop, the network still works correctly as long as the number of
 failing and/or attacked nodes is less than 1/4 of the number of
 masternodes.</p>
-<h2 id="spam-attack-spam-attack-unnumbered">Spam Attack {#spam-attack .unnumbered}</h2>
+<h2 class="unnumbered" id="spam-attack">Spam Attack</h2>
 <p>keeps the same transaction fee mechanism as Ethereum which is indicated
 via gasPrice. However, supports minimum transaction fee (at 1 wei),
 which somehow enables spamming that attacker tries to broadcast a huge
 amount of low fee transactions to the system. However, masternodes
 always sort transactions and pick up only high fee transactions into the
 proposing block. Thus, spammers have little chance to harm the system.</p>
-<h1 id="related-work-secrelatedwork">Related work {#Sec:relatedwork}</h1>
+<h1 id="Sec:relatedwork">Related work</h1>
 <p>Consensus plays an important role to guarantee the success of
 distributed and decentralized systems. Bitcoin’s core consensus
 protocol, often referred to as Nakamoto consensus @Bitcoin08, realizes a
@@ -986,7 +988,7 @@ equality between stakers: In Ouroboros, stakers with very little stake
 have a very small probability of becoming block creators, while, in ,
 these stakers can choose an optimal strategy to vote for potential
 masternodes to get incentives.</p>
-<h1 id="conclusion-and-perspectives-secconclusion">Conclusion and perspectives {#Sec:Conclusion}</h1>
+<h1 id="Sec:Conclusion">Conclusion and perspectives</h1>
 <p>In this paper, we proposed PoSV, a PoS Voting-based blockchain protocol
 with heuristic and fair voting mechanism, rigorous security guarantees,
 and fast finality. We also presented a novel reward mechanism and show
@@ -995,7 +997,7 @@ having forks, fast confirmation time, plus the contributions and
 benefits of masternodes are fair in the sense that the probability
 distribution function is uniform eventually.</p>
 <p>0.3cm</p>
-<h2 id="perspectives-perspectives-unnumbered">Perspectives {#perspectives .unnumbered}</h2>
+<h2 class="unnumbered" id="perspectives">Perspectives</h2>
 <ul>
 <li>
 <p><strong>Future work</strong> The team is currently working on the implementation
