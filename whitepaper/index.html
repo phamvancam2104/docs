@@ -777,7 +777,7 @@ existing blockchains as follows.</p>
 <h4 id="improvements-of-double-validation-over-single-validation">Improvements of Double Validation over Single Validation<a class="headerlink" href="#improvements-of-double-validation-over-single-validation" title="Permanent link">&para;</a></h4>
 <p>Let’s show the improvements of DV compared to Single Validation through
 analyzing some attacking scenarios as shown in Fig.
-<script type="math/tex; mode=display">fig:singlevalidation</script> and Fig. <script type="math/tex; mode=display">fig:doublevalidation</script>.</p>
+<a href="#fig:singlevalidation">SV</a> and Fig. <a href="#fig:doublevalidation">DV</a>.</p>
 <ul>
 <li><strong>Single Validation</strong> In Single Validation, in an epoch, each
     masternode, e.g. M1, sequentially takes its turn to create a
@@ -785,11 +785,9 @@ analyzing some attacking scenarios as shown in Fig.
     then validates the created block100. If block100 is invalid (that
     potentially means that M1 is an attacker) and contains a transaction
     that invalidly benefits M1, if M2 is honest (see Fig.
-    <script type="math/tex; mode=display">fig:singlevalidation</script>
-<script type="math/tex; mode=display">a</script>), it rejects block100 and creates
+    <a href="#fig:singlevalidation">SV a</a>), it rejects block100 and creates
     another block100 next to block99. But, if M2 is an attacker
-    (see Fig. <script type="math/tex; mode=display">fig:singlevalidation</script>
-<script type="math/tex; mode=display">b</script>) that corporates with M1,
+    (see Fig. <a href="#fig:singlevalidation">SV b</a>) that corporates with M1,
     M2 ignores the invalidation of block100, signs it and creates next
     block, namely block101 that is valid. Then, the next masternode M3
     verifies that block101 is valid, M3 signs block101 and creates a
@@ -803,14 +801,12 @@ analyzing some attacking scenarios as shown in Fig.
     reduces the probability of having garbage blocks in the blockchain.
     Assuming that M1 and M2 are the block creator and block verifier,
     respectively, for block100 in our DV. If block100 is invalid and M2
-    is honest (see Fig. <script type="math/tex; mode=display">fig:doublevalidation</script>
-<script type="math/tex; mode=display">a</script>), M2 will not
+    is honest (see Fig. <a href="#fig:doublevalidation">DV a</a>), M2 will not
     seal this block. Therefore, the next block creator M3 for creating
     block101 will see that block100 does not have enough 2 signatures,
     thus reject block100 and create another block100 next to block99. On
     the other hand, if M2 is also an attacker pairing/handshaking with
-    M1 (see Fig. <script type="math/tex; mode=display">fig:doublevalidation</script>
-<script type="math/tex; mode=display">b</script>), M2 signs block100
+    M1 (see Fig. <a href="#fig:doublevalidation">DV b</a>), M2 signs block100
     despite its invalidity (remember that the block verifier M2 is
     randomly selected, there has little chance of successfully pairing
     M1 and M2). Next, even though M3 will verify that block100 has two
@@ -1038,6 +1034,7 @@ collision-resistant hash function. The length of a chain <script type="math/tex"
 its number of blocks. The block <script type="math/tex">B_n</script> is the head of the chain, denoted
 <script type="math/tex">head(C)</script>. We treat the empty string <script type="math/tex">\epsilon</script> as a legal chain and by
 convention set <script type="math/tex">head(\epsilon) = \epsilon</script>.</p>
+<p><img alt="al 1" src="../figures/al1.png" /></p>
 <p>
 <script type="math/tex; mode=display">Epoch</script> An epoch is a set of <script type="math/tex">R</script> adjacent slots
 <script type="math/tex">S = \{sl_1, . . . , sl_R\}</script>. The value <script type="math/tex">R</script> is also a parameter (slots
