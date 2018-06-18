@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>/</loc>
+     <loc>https://docs.tomochain.com/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/started/</loc>
+     <loc>https://docs.tomochain.com/started/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/whitepaper/</loc>
+     <loc>https://docs.tomochain.com/whitepaper/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/links/</loc>
+     <loc>https://docs.tomochain.com/links/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/about/</loc>
+     <loc>https://docs.tomochain.com/about/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
