@@ -11,54 +11,69 @@
             "title": "Introduction"
         }, 
         {
-            "location": "/started/", 
+            "location": "/get-started/started/", 
             "text": "Getting started\n\n\nBeginners guide\n\n\nGetting TOMO\n\n\nBrowse to https://wallet.tomocoin.io\n\n\nClick on + CREATE NEW WALLET button.\n\n\nUsing the explorer\n\n\nhttps://explorer-testnet.tomochain.com/\n\n\nHow To Vote\n\n\nhttps://validators-testnet.tomochain.com/\n\n\nDapps\n\n\nDeploy dapp tutorial \nhttps://github.com/nuuneoi/tomochain-dapp-example\n\n\nUsing Testnet\n\n\nRunning a Node\n\n\ntodo\n\n\nRunning a Masternode\n\n\ntodo", 
-            "title": "Getting started"
+            "title": "Beginer's Guide"
         }, 
         {
-            "location": "/started/#getting-started", 
+            "location": "/get-started/started/#getting-started", 
             "text": "", 
             "title": "Getting started"
         }, 
         {
-            "location": "/started/#beginners-guide", 
+            "location": "/get-started/started/#beginners-guide", 
             "text": "", 
             "title": "Beginners guide"
         }, 
         {
-            "location": "/started/#getting-tomo", 
+            "location": "/get-started/started/#getting-tomo", 
             "text": "Browse to https://wallet.tomocoin.io  Click on + CREATE NEW WALLET button.", 
             "title": "Getting TOMO"
         }, 
         {
-            "location": "/started/#using-the-explorer", 
+            "location": "/get-started/started/#using-the-explorer", 
             "text": "https://explorer-testnet.tomochain.com/", 
             "title": "Using the explorer"
         }, 
         {
-            "location": "/started/#how-to-vote", 
+            "location": "/get-started/started/#how-to-vote", 
             "text": "https://validators-testnet.tomochain.com/", 
             "title": "How To Vote"
         }, 
         {
-            "location": "/started/#dapps", 
+            "location": "/get-started/started/#dapps", 
             "text": "Deploy dapp tutorial \nhttps://github.com/nuuneoi/tomochain-dapp-example", 
             "title": "Dapps"
         }, 
         {
-            "location": "/started/#using-testnet", 
+            "location": "/get-started/started/#using-testnet", 
             "text": "", 
             "title": "Using Testnet"
         }, 
         {
-            "location": "/started/#running-a-node", 
+            "location": "/get-started/started/#running-a-node", 
             "text": "todo", 
             "title": "Running a Node"
         }, 
         {
-            "location": "/started/#running-a-masternode", 
+            "location": "/get-started/started/#running-a-masternode", 
             "text": "todo", 
             "title": "Running a Masternode"
+        }, 
+        {
+            "location": "/get-started/testnet/", 
+            "text": "Tomochain Testnet Information:\n\n\nChain ID: 89\nRPC: https://testnet.tomochain.com\n\n\n\n\nTestnet status: \nhttps://stats-testnet.tomochain.com\n\n\nBlock Explorer for the testnet: \nhttps://explorer-testnet.tomochain.com\n\n\nYou can get free $TOMO in our testnet at this site (faucet): \nhttps://faucet.tomochain.com\n\n\nSee this blog post to know how to connect the testnet via Metamask: \nmetamask-connect-tomochain", 
+            "title": "Testnet"
+        }, 
+        {
+            "location": "/get-started/run-node/", 
+            "text": "To run a node to join Tomochain Testnet network, please see the tutorials at \ntomochain-testnet", 
+            "title": "Running a Node"
+        }, 
+        {
+            "location": "/get-started/private-network/", 
+            "text": "To create your own network, please see the tutorials at \ntomochain-testnet", 
+            "title": "Create your own network"
         }, 
         {
             "location": "/whitepaper/", 
@@ -214,6 +229,11 @@
             "location": "/whitepaper/#Sec:References", 
             "text": "Satoshi Nakamoto. Bitcoin: A peer-to-peer electronics cash system. 2008.  pdf  Ethereum Foundation. Ethereum\u2019s White Paper. , 2014. Online available 25/05/2018.  link  D. Larimer. Delegated Proof-of-Stake (DPOS). BitShare White Paper 2014.  S. King and S. Nadal. PPCoin: Peer-to-peer crypto-currency with\nproof-of-stake. Self-Published, 2012.  pdf  V. Buterin. On public and private blockchains. Ethereum Blog, 2015.  A. Kiayias, A. Russell, B. David, and R. Oliynykov: Ouroboros: A\nProvably Secure Proof-of-Stake Blockchain Protocol. IACR-CRYPTO-2017.  pdf  D. Mingxiao, et al. A Review on Consensus Algorithms of Blockchain. 2017\nIEEE International Conference on Systems, Man, and Cybernetics (SMC)\nBanff Center, Banff, Canada, October 5-8, 2017  R. Pass and E. Shi. Rethinking Large-Scale Consensus. In the Proceedings\nof the IEEE 30th Computer Security Foundations Symposium, 2017. Thunder\nToken Foundation: Thunder Consensus White Paper, Janurary, 2018.  R. Pass, L. Seeman, and A. Shelat. Analysis of the Blockchain Protocol\nin Asynchronous Networks. In EUROCRYPTO 2017.  Juan A. Garay, A. Kiayias, and N. Leonardos. The bitcoin backbone\nprotocol: Analysis and applications. In Elisabeth Oswald and Marc\nFischlin, editors, Advances in Cryptology - EUROCRYPT 2015, Volume 9057\nof Lecture Notes in Computer Science, pages 281\u2013310. Springer, 2015.  Tendermint Team. Understanding the Basics of a Proof-of-Stake Security\nModel.\nhttps://blog.cosmos.network/understanding-the-basics-of-a-proof-of-stake-security-model-de3b3e160710.\nOnline available 25/05/2018.  EOS Team. EOS.IO Technical White Paper v2. https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md .\nOnline available 25/05/2018.  link  Bitshares Team. Delegated Proof-of-Stake Consensus.\nhttps://bitshares.org/technology/delegated-proof-of-stake-consensus/.\nOnline available 25/05/2018.  link  R. Pass, and E. Shi. (2017). Hybrid consensus: Efficient consensus in\nthe permissionless model. In LIPIcs-Leibniz International Proceedings in\nInformatics (Vol. 91). Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik.  V. Buterin, and V. Griffith. (2017). Casper the Friendly Finality\nGadget. arXiv preprint arXiv:1710.09437.  link  H. McCook. Under the Microscope: Economic and Environmental Costs of\nBitcoin Mining. https://www.coindesk.com/microscope-economic-environmental-costs-bitcoin-mining/ .\nOnline available 25/05/2018.", 
             "title": "References"
+        }, 
+        {
+            "location": "/use-cases/", 
+            "text": "Partners willing to run applications on top of Tomochain:\n\n\n\n\nSocial Network: \nhttps://replyblock.com\n\n\nSupply Chain: \nhttps://replyblock.com\n\n\nE-commerce: \nhttp://binkabi.io\n\n\nAdvertising Ecosystem: \nhttps://bigbom.com\n\n\n\n\nTo be updated ...", 
+            "title": "Use Cases"
         }, 
         {
             "location": "/contribution/github/", 
