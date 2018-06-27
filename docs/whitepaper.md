@@ -1,6 +1,6 @@
 # Introduction
 
-version 1.0 ([pdf version](https://tomochain.com/docs/technical-whitepaper--1.0.pdf))
+version 1.0 ([pdf version](https://tomochain.com/docs/technical-whitepaper---1.0.pdf))
 
 The blockchain industry and the infrastructure of the Internet of Value
 are being built rapidly around the globe, and to many the atmosphere is
@@ -69,22 +69,17 @@ uniform eventually.
 
 ### Structure of the remainder of the paper
 
-* [TomochainOverview](#Sec:MasternodeDesign): explains the intuition ideas and
+* Section [Tomochain Overview](#Sec:MasternodeDesign): explains the intuition ideas and
 overview architectural design of masternodes, framework and background
 protocols that help mass readers (e.g., investors, traders, others) who
 may not have technical knowledge understand our mechanism easily.
-* [StakeVoting](#Sec:StakeVoting) presents **Tomochain** stakeholder policy, masternode
+* Section [Stakeholders & Voting](#Sec:StakeVoting) presents **Tomochain** stakeholder policy, masternode
 committee voting systems, and reward mechanism.
-* [ProtocolOverview](#Sec:ProtocolOverview) explains the motivation and double
+* Section [Tomochain consensus protocol](#Sec:ProtocolOverview) explains the motivation and double
 validation process as well as finality checkpoint of the protocol. 
-* In Section [ProtocolFormalization](#Sec:ProtocolFormalization), we present the formalization of
-our model in a mathematical way to show the soundness of our model and
-protocol. 
-* Section [SecurityAnalysis](#Sec:SecurityAnalysis) discusses the security
-analysis and resistant strain of potential attacks. We discuss and
-compare **Tomochain** with several existing blockchains in
-Section 
-* Section [related work](#Sec:relatedwork). 
+* In Section [Protocol formalizations](#Sec:ProtocolFormalization), we present the formalization of our model in a mathematical way to show the soundness of our model and protocol. 
+* Section [Security Analysis](#Sec:SecurityAnalysis) discusses the security analysis and resistant strain of potential attacks. 
+* We discuss and compare **Tomochain** with several existing blockchains in Section [related work](#Sec:relatedwork). 
 * Finally, we conclude the paper in Section [Conclusion](#Sec:Conclusion).
 
 ## Tomochain Masternode Design {#Sec:MasternodeDesign}
